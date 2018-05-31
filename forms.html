@@ -2,33 +2,37 @@
 <html>
     <head>
         <title>"Register With Us'</title>
+        <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8">
+
     </head>
         <body>
-        <h1>Register With Us</h1>
+        <h1 class="fancy-header">Register With Us</h1>
         <form method="POST" action="https://webhook.site/7eca9d2a-7a24-4ca2-a704-94d7844e772f">
+
+
             <input type="text" name="email" placeholder="Enter your email address">
             <br>
             <input type="password" name="password" placeholder="Enter password">
             <br>
-        <input type="submit">
+
 
             <br>
 
             <textarea rows="10" cols="20" placeholder="BIO"></textarea>
 
             <br>
-            <input type="submit">
 
+            <div>
 
          <h3>"How did you hear about us"</h3>
             <!--single select-->
             <input type="radio" name="medium_1" value="a">Billboard<br>
-            <input type="radio" name="medium_1" value="b">Radio Button<br>
+            <input type="radio" name="medium_1" value="b">Radio<br>
             <input type="radio" name="medium_1" value="c">Internet Advertisement<br>
             <input type="radio" name="medium_1" value="d">Other<br>
 
-            <button type="submit">Submit</button>
+
 
             <br>
             <!--multiple select-->
@@ -38,15 +42,18 @@
             <input type="radio" name="medium_3" value="c">Internet Advertisement<br>
             <input type="radio" name="medium_4" value="d">Other<br>
 
-            <button type="submit">Submit</button>
+
 
             <h3>What browser are you using?</h3>
             <select name="browser">
-                <option value="Safari">Safarit</option>
+                <option value="Safari">Safari</option>
                 <option value="Chrome">Chrome</option>
-                <option value="DuckDuckGo">DuckDuckGo</option>
+                <option value="IE (Edge)">IE</option>
             </select>
+             <br>
+            <button type="submit">Submit</button>
 
+            </div>
         </form>
         </body>
 </html>
