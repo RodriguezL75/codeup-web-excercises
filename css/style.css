@@ -1,3 +1,22 @@
 .fancy-header {
     color: purple;
 }
+
+h1 {
+    text-align: center;
+}
+
+
+h2 {
+    color:blue;
+    text-decoration-line: underline;
+}
+
+body {
+    font-family: AppleMyungjo;
+    background-image: url("../img/mountain.png");
+    background-size: contain;
+    width: 95em;
+    height: 99%;
+    border: 2px solid;
+}
