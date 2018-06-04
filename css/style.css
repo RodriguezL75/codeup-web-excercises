@@ -4,6 +4,7 @@
 
 h1 {
     text-align: center;
+    color:yellow;
 }
 
 
@@ -14,9 +15,48 @@ h2 {
 
 body {
     font-family: AppleMyungjo;
+    font-style: oblique;
     background-image: url("../img/mountain.png");
     background-size: contain;
     width: 95em;
     height: 99%;
     border: 2px solid;
+}
+
+ol {
+    list-style-type: disc;
+}
+
+ul {
+    list-style-type: square;
+}
+
+body {
+    background-repeat: repeat;
+}
+
+table {
+    table-layout: fixed;
+    width: 25%;
+    border-collapse: collapse;
+    border: 3px solid yellow;
+}
+
+
+th, td {
+    padding: 30px;
+}
+
+a:hover {
+    color:blue;
+}
+
+a:link {
+    color:red;
+}
+a:visited {
+    color:black;
+}
+a:active {
+    color:green;
 }

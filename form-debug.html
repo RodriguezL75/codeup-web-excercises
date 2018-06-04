@@ -12,7 +12,7 @@
     <br>
 
     <label for="email">Email</label>
-    <input id="email" type="text">
+    <input id="email" type="email" name="email">
     <br>
 
     <label for="password">password</label>
@@ -26,25 +26,25 @@
     <h2>Filing Status</h2>
 
         <label for="single">
-        <input type="radio" name="filing_status" value="single">
+        <input type="radio" id="single" name="filing_status" value="single">
         Single
     </label>
     <br>
 
        <label for="married_joint">
-        <input type="radio" name="filing_status" value="married_joint">
+        <input type="radio" id="married_joint" name="filing_status" value="married_joint">
         Married Filing Jointly
     </label>
     <br>
 
-        <label for="married_separat">
-        <input type="radio" name="filing_status" value="married_separate">
+        <label for="married_separated">
+        <input type="radio" id="married_separated" name="filing_status" value="married_separate">
         Married Filing Separately
     </label>
     <br>
 
-        <label for="">
-        <input type="radio" name="filing_status" value="hoh">
+        <label for="head of household">
+        <input type="radio" id="head of household" name="filing_status" value="hoh">
         Head of Household
     </label>
     <br>
@@ -71,20 +71,20 @@
 
     <h2>What kind of phone do you have</h2>
 
-    <option name="phone type">
-        <select value="android">Android</select>
-        <select value="iphone">iPhone</select>
-        <select value="windows">Windows Phone</select>
-        <select value="other">Other</select>
-    </option>
+    <select name="phone type">
+        <option value="android">Android</option>
+        <option value="iphone">iPhone</option>
+        <option value="windows">Windows Phone</option>
+        <option value="other">Other</option>
+    </select>
 
     <hr>
 
     <label for="newsletter">Sign Me Up For The Newsletter
-        <input type="checkbox" name="newsletter" id="newsletter">
+        <input type="checkbox" name="newsletter" id="newsletter" checked>
     </label>
 
-    <br>
+    <hr>
 
     <button type="submit">Submit Form</button>
 
