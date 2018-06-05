@@ -1,0 +1,49 @@
+* Small devices (tablets, 768px and up) */
+@media screen and (min-width:320px) {
+    /* ... */ }
+
+.alert-info {
+    text-align: center;
+    border: 1px darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #75aaff;
+
+}
+
+body > div.alert-info.hidden-on-desktop > a {
+    text-decoration: none;
+    text: black;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.sub-section {
+    font-style: italic;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    background-color: gray;
+    border: 1px darkgray;
+    margin: 10px;
+    height: 30px;
+    padding-top: 1em;
+
+}
+
+ul {
+    padding: 0;
+}
