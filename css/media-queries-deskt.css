@@ -1,53 +1,50 @@
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
 
+    .hidden-on-desktop {
+        display: none;
+    }
 
+    .alert-info {
 
-.hidden-on-desktop{
-    display: none;
-}
+    }
 
+    body > div.alert-info.hidden-on-desktop > a {
+        text-decoration: none;
+        text: black;
+    }
 
-.alert-info {
+    h1 {
+        float: left;
+    }
 
-}
-body > div.alert-info.hidden-on-desktop > a {
-    text-decoration: none;
-    text: black;
-}
+    .nav-links {
+        float: right;
+        position: absolute;
 
+    }
 
-h1 {
-    float: left;
-}
+    .sub-section {
+        font-style: italic;
 
-.nav-links {
-    float: right
-    position: absolute;
+    }
 
-}
+    img {
+        max-width: 100%;
+    }
 
-.sub-section {
-    font-style: italic;
+    li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
 
-}
+    }
 
-img {
-    max-width: 100%;
-}
+    ul {
+        padding: 0;
+        float: right;
 
-li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
+    }
 
-}
-
-
-
-ul {
-    padding: 0;
-    float: right;
-}
 }
