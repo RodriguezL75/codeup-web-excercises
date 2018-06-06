@@ -7,8 +7,8 @@ div {
 
 .container {
     margin: 0 auto;
-    width: 80%;
-    min-width: 768px;
+    width: 100%;
+    min-width: 1200px;
 }
 
 .column {
@@ -25,33 +25,34 @@ div {
 }
 
 .column.one-half {
-    width: calc(50% - 4px);
+    width: 50%;
 }
 
 .column.one-third {
-    width: calc(33.33% - 4px);
+    width: 33.33%;
 }
 
 
 .column.one-fourth {
-    width: calc(25% - 4px);
+    width: 25%;
 }
 
 .column.one-sixth {
-    width: calc(16% - 4px);
+    width: 16.66%;
 }
 
 .column.one-eighth {
-    width: calc(12.5% - 4px);
+    width: 12.5%;
 }
 
-.class {
-    display: grid;
-}
+
 
 @media screen and (max-width: 768px) {
     .column.one-third,
-    .column.one-half {
+    .column.one-fourth,
+    .column.one-half,
+    .column.one-sixth,
+    .column.one-eighth {
         width: 100%;
     }
 }
