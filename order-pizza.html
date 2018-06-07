@@ -1,4 +1,4 @@
-<!doctype html5>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -26,21 +26,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Menu</a>
             </li>
-           <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>-->
+
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search stores near you">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you</button>
@@ -56,46 +42,202 @@
     </div>
 </nav>
 
-<!-- Main page content -->
-<!--<div class="container-fluid">-->
-    <!--<div class="jumbotron">-->
-       <!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
-            <!--<h1 class="display-4">Welcome to Pizza World!</h1>-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>-->
-<!--</div>-->
-<div class="jumbotron jumbotron-fluid">
+
+<div class="jumbotron jumbotron-fluid d-none d-md-block">
     <div class="container-fluid">
         <h1 class="display-4">Welcome to Pizza World!</h1>
     </div>
 </div>
 <h2>Build your own pizza!</h2>
-<ul class="nav nav-pizza">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">Size and crust</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Cheese and Sauce</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Toppings</a>
-    </li>
 
-</ul>
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-Size-tab" data-toggle="tab" href="#nav-Size" role="tab" aria-controls="nav-Size" aria-selected="true">Size and crust</a>
+        <a class="nav-item nav-link" id="nav-Cheese and Sauce-tab" data-toggle="tab" href="#nav-Cheese and Sauce" role="tab" aria-controls="nav-Cheese and Sauce" aria-selected="false">Cheese and Sauce</a>
+        <a class="nav-item nav-link" id="nav-Toppings-tab" data-toggle="tab" href="#nav-Toppings" role="tab" aria-controls="nav-Toppings" aria-selected="false">Toppings</a>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-Size" role="tabpanel" aria-labelledby="nav-Size-tab">
+        <div class="card-body">
+            <h5 class="card-title">Choose size and crust</h5>
+            <p class="card-text">Hand Tossed</p>
+            <p class="card-text">Garlic seasoned crust with a rich, buttery taste.</p>
+        </div>
 
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="size1" value="option1" checked>
+            <label class="form-check-label" for="size1">
+                Small (10")
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="size2" value="option2">
+            <label class="form-check-label" for="size2">
+                Medium (12")
+            </label>
+        </div>
+        <div class="card-body">
+            <h6 class="card-title">Crispy Thin</h6>
+            <p class="card-text">Thin enough for optimum crispy to crunchy ratio</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="size-t" id="size-t 1" value="option1" checked>
+            <label class="form-check-label" for="size-t 1">
+                Medium (12")
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="size-t" id="size-t 2" value="option2">
+            <label class="form-check-label" for="size-t 2">
+                Large (14")
+            </label>
+        </div>
+        <br>
+        <footer>
+            <!--<p class="text-right">Next Step</p>-->
+            <a href="#" class="btn btn-primary">Next Step</a>
+        </footer>
+    </div>
 
-<nav
-    <!-- Content here -->
+    <div class="tab-pane fade" id="nav-Cheese and Sauce" role="tabpanel" aria-labelledby="nav-Cheese-tab">
+        <div class="card-body">
+            <h5 class="card-title">Choose Cheese and Sauce</h5>
+            <p class="card-text">Cheese</p>
+            <p class="card-text">How much?</p>
+        </div>
+        <select class="custom-select custom-select-sm">
+            <option value="1">Light</option>
+            <option value="2">Normal</option>
+            <option value="3">Extra</option>
+        </select>
 
-<div class="d-sm-none">
-<div class="d-none d-lg-block">
+        <div class="card-body">
+            <p class="card-text">Sauce</p>
+            <p class="card-text">What Type?</p>
+        </div>
+        <select class="custom-select custom-select-sm">
+            <option value="1">Tomato Sauce</option>
+            <option value="2">Marinara Sauce</option>
+            <option value="3">BBQ Sauce</option>
+            <option value="4">Alfredo Sauce</option>
+        </select>
+        <div class="card-body">
+            <p class="card-text">How Much?</p>
+        </div>
+        <select class="custom-select custom-select-sm">
+            <option value="1">Light</option>
+            <option value="2">Normal</option>
+            <option value="3">Extra</option>
+        </select>
 
+        <footer>
+            <!--<p class="text-right">Next Step</p>-->
+            <a href="#" class="btn btn-primary">Previous Step</a>
+            <a href="#" class="btn btn-primary">Next Step</a>
+        </footer>
+    </div>
+    <div class="tab-pane fade" id="nav-Toppings" role="tabpanel" aria-labelledby="nav-Toppings-tab">
+        <div class="card-body">
+            <h5 class="card-title">Choose Toppings</h5>
+            <p class="card-text">Choose Meats</p>
 
+        </div>
 
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="meat1" value="option1" checked>
+            <label class="form-check-label" for="meat1">
+                Beef
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="meat2" value="option2">
+            <label class="form-check-label" for="meat2">
+                Ham
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="meat3" value="option3">
+            <label class="form-check-label" for="meat3">
+                Philly Steak
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="meat4" value="option4">
+            <label class="form-check-label" for="meat4">
+                Bacon
+            </label>
+        </div>
+        <div class="card-body">
+            <h6 class="card-title">Choose Non-Meats</h6>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="veg1" value="option1" checked>
+            <label class="form-check-label" for="veg1">
+                Green Peppers
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="veg2" value="option2">
+            <label class="form-check-label" for="veg2">
+                Mushrooms
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="veg3" value="option3">
+            <label class="form-check-label" for="veg3">
+                Onions
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="size" id="veg4" value="option4">
+            <label class="form-check-label" for="veg4">
+                Jalepeno Peppers
+            </label>
+        </div>
+        <footer>
+            <!--<p class="text-right">Next Step</p>-->
+            <a href="#" class="btn btn-primary">Checkout</a>
+        </footer>
+        </div>
+</div>
 
+<!--<ul class="nav nav-tabs">-->
+    <!--<li class="nav-item">-->
+        <!--<a class="nav-link active" href="#">Size and crust</a>-->
+    <!--</li>-->
+    <!--<button type="button" class="btn btn-primary">
+        1 <span class="badge badge-light">Size and crust</span>
+        <span class="sr-only">1</span>
+    </button>-->
+    <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#">Cheese and Sauce</a>-->
+    <!--</li>-->
+    <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#">Toppings</a>-->
+    <!--</li>-->
 
+<!--</ul>-->
+<!--<div class="card text-center">-->
+    <!--<div class="card-header">-->
+        <!--<ul class="nav nav-tabs card-header-tabs">-->
+            <!--<span class="badge badge-primary badge-pill">1</span>-->
+            <!--<li class="nav-item">-->
+            <!--<li class="list-group-item d-flex justify-content-between align-items-center">-->
+                <!--Size and Crust-->
 
-
+                <!--<a class="nav-link active" href="#">Size and Crust</a>-->
+            <!--</li>-->
+            <!--<span class="badge badge-primary badge-pill">2</span>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Cheese and Sauce</a>-->
+            <!--</li>-->
+            <!--<span class="badge badge-primary badge-pill">3</span>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Toppings</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,7 +1,7 @@
 
 .jumbotron {
     background-image:url("../img/pizza.png");
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div.jumbotron {
@@ -25,6 +25,28 @@ h2 {
     padding-top: 50px
     text-align: left;
     margin-left: 20px;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.form-check {
+    text-align: left;
+}
+
+h5 {
+    color: white;
+    background-color: #3B94D9;
+    padding: 0.5em;
+}
+
+.form-check {
+    margin: 5px
+}
+
+.tab-content {
+    margin-left: 1.0em;
 }
 
 /*h1
