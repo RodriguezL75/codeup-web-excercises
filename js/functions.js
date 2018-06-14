@@ -1,4 +1,5 @@
-"use strict";
+( function () {
+    "use strict";
 
 /**
  * TODO:
@@ -40,7 +41,7 @@ console.log(sayHello());
 var random = Math.floor((Math.random() * 3) + 1);
 
 function isTwo(number) {
-    return 2 == number;
+    return number ==2;
 }
 console.log(isTwo(-1));
 console.log(isTwo(2));
@@ -51,7 +52,7 @@ function isTwo(number) {
     // console.log('rnd',number);
     return 2 === number;
 }
-console.log(isTwo(random)):
+console.log(isTwo(random));
 
 /**
  * TODO:
@@ -119,14 +120,14 @@ console.log(calculateTip(prompt("Give me the tip %"), prompt("Give me the bill t
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-function applyDiscount(originalPrice, discountPercent){
+/*// function applyDiscount(originalPrice, discountPercent){
     var discount = discountPercent / 100; //.12
     var discountVal = originalPrice * discount;
     console.log(discount);
     return originalPrice - discountVal;
 }
-    console.log(applyDiscount(45.99, 12));
-    console.log(applyDiscount(45.99))
+    // console.log(applyDiscount(45.99, 12));
+    // console.log(applyDiscount(45.99));*/
 
-
-})();
+;
+})()
