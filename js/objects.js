@@ -137,6 +137,13 @@
     }
     console.log("...");
 
+    books.forEach(function (book, i)){
+        console.log("book # " + (i+1));
+        console.log("title: " + books[i].title);
+        console.log("author: " + books[i].author.firstName + " " + books[i].author.lastName);
+        console.log("---");
+
+
 
 
     /**
@@ -175,4 +182,4 @@
      *   `showBookInfo` function.
      */
 
-})();
+}})();

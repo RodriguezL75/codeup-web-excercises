@@ -33,14 +33,14 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      *
-     */
-
-    var planetsHTML = "<ul><li>>";
-    planetsHTML += planetsArray.join("</li><li>>");
-    planetsHTML += </li></ul>;
-
-    console.log(planetsHTML);
-
-    document.body.innerHTML = planetsHTML;
+    //  */
+    //
+    // // var planetsHTML = "<ul><li>>";
+    // // planetsHTML += planetsArray.join("</li><li>>");
+    // // planetsHTML += </li></ul>;
+    // //
+    // // console.log(planetsHTML);
+    // //
+    // // document.body.innerHTML = planetsHTML;
 
 })();
