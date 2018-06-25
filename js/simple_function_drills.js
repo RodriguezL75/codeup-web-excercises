@@ -60,7 +60,12 @@ for(var i = 1; i <= 10; i+=1 ){
 }
 
 
-
+document.getElementById("playbutton").addEventListener("click", function (){
+    var input = document.getElementById("play input").value;
+    document.getElementById("playOutput").innerText = input;
+    // console.log("Play!");
+    console.log(input);
+}
 
 
 

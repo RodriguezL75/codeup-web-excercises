@@ -1,6 +1,19 @@
 (function() {
     "use strict";
 
+
+  var person = {
+      firstName:"Lisa",
+      lastName:"Rodriguez"
+  };
+    console.log(person.firstName + " " + person.lastName);
+
+    person.sayHello = function(){
+        return"Hello from " + this.firstName + " " + this.lastName
+        // console.log("Hello from " + this.firstName + " " + this.lastName);//defined the method on the person object.
+    }
+    console.log(person.sayHello());//in order to call out the return need to console log the person.sayHello.
+person.sayHello();//in order to call out the method you need to reference the object the name of the object person.sayHello()
     /**
      * TODO:
      * Create an object with firstName and lastName properties that are strings
@@ -16,17 +29,7 @@
     // person.firstName = "Lisa";
     // person.lastName = "Rodriguez";
 
-    var person = {
-        firstName: "Lisa",
-        lastName: "Rodriguez",
-        sayHello: function() {
-            var message = "Hello from " + this.firstName + " " + this.lastName + "!";
-            return message;
-        }
-    }
-    console.log(person.sayHello());
-    // console.log(person.firstName);
-    // console.log(person.lastName);
+
 
     /**
      * TODO:
@@ -37,47 +40,47 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    console.log("Hello from " + person.firstName + " " + person.lastName + "!");
 
 
 
 
 
-    /** TODO:
-     * HEB has an offer for the shoppers that buy products amounting to
-     * more than $200. If a shopper spends more than $200, they get a 12%
-     * discount. Write a JS program, using conditionals, that logs to the
-     * browser, how much Ryan, Cameron and George need to pay. We know that
-     * Cameron bought $180, Ryan $250 and George $320. Your program will have to
-     * display a line with the name of the person, the amount before the
-     * discount, the discount, if any, and the amount after the discount.
-     *
-     * Uncomment the lines below to create an array of objects where each object
-     * represents one shopper. Use a foreach loop to iterate through the array,
-     * and console.log the relevant messages for each person
-     */
 
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-        shoppers.forEach((function(shopper) {
-            var discount = 0;
-
-          if(shopper.amount > 200) {
-              var discount = (shopper.amount * 0.12);
-          }
-              console.log("==========================")
-              console.log("Shopper: " + shopper.name)
-              console.log("Amount: $" + shopper.amount.toFixed(2))
-              console.log("Discount: $" + discount.toFixed(2))
-              console.log("Total Amount: $" + (shopper.amount - discount).toFixed(2))
-              console.log("==========================")
-              console.log("")
-
-
-        }));
+    // /** TODO:
+    //  * HEB has an offer for the shoppers that buy products amounting to
+    //  * more than $200. If a shopper spends more than $200, they get a 12%
+    //  * discount. Write a JS program, using conditionals, that logs to the
+    //  * browser, how much Ryan, Cameron and George need to pay. We know that
+    //  * Cameron bought $180, Ryan $250 and George $320. Your program will have to
+    //  * display a line with the name of the person, the amount before the
+    //  * discount, the discount, if any, and the amount after the discount.
+    //  *
+    //  * Uncomment the lines below to create an array of objects where each object
+    //  * represents one shopper. Use a foreach loop to iterate through the array,
+    //  * and console.log the relevant messages for each person
+    //  */
+    //
+    // var shoppers = [
+    //     {name: 'Cameron', amount: 180},
+    //     {name: 'Ryan', amount: 250},
+    //     {name: 'George', amount: 320}
+    // ];
+    //     shoppers.forEach((function(shopper) {
+    //         var discount = 0;
+    //
+    //       if(shopper.amount > 200) {
+    //           var discount = (shopper.amount * 0.12);
+    //       }
+    //           console.log("==========================")
+    //           console.log("Shopper: " + shopper.name)
+    //           console.log("Amount: $" + shopper.amount.toFixed(2))
+    //           console.log("Discount: $" + discount.toFixed(2))
+    //           console.log("Total Amount: $" + (shopper.amount - discount).toFixed(2))
+    //           console.log("==========================")
+    //           console.log("")
+    //
+    //
+    //     }));
 
 
 
@@ -93,55 +96,55 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    //
+    // var books = [
+    //
+    //
+    //     {    title: "The Salmon of Doubt",
+    //         author: {
+    //             firstName: "Douglas",
+    //             lastName:"Adams"
+    //         }},
+    //     {    title: "Ancient Aliens",
+    //         author: {
+    //             firstName: "Giorgio",
+    //             lastName:"Tsoukalos"
+    //     }},
+    //
+    //     {    title: "Ancient Aliens",
+    //         author: {
+    //             firstName: "Giorgio",
+    //             lastName:"Tsoukalos"
+    //         }},
+    //
+    //     {   title: "Ancient Aliens",
+    //         author: {
+    //             firstName: "Giorgio",
+    //             lastName:"Tsoukalos"
+    //         }},
+    //
+    //     {    title: "Ancient Aliens",
+    //         author: {
+    //             firstName: "Giorgio",
+    //             lastName:"Tsoukalos"
+    //         }}
+    //
+    //
+    // ];
+    // console.log(books);
+    // for (var i=0; i<books.length; i++){
+    //     console.log("book # " + (i+1));
+    //     console.log("title: " + books[i].title);
+    //     console.log("author: " + books[i].author.firstName + " " + books[i].author.lastName);
+    //     console.log("---");
+    // }
+    // console.log("...");
 
-    var books = [
-
-
-        {    title: "The Salmon of Doubt",
-            author: {
-                firstName: "Douglas",
-                lastName:"Adams"
-            }},
-        {    title: "Ancient Aliens",
-            author: {
-                firstName: "Giorgio",
-                lastName:"Tsoukalos"
-        }},
-
-        {    title: "Ancient Aliens",
-            author: {
-                firstName: "Giorgio",
-                lastName:"Tsoukalos"
-            }},
-
-        {   title: "Ancient Aliens",
-            author: {
-                firstName: "Giorgio",
-                lastName:"Tsoukalos"
-            }},
-
-        {    title: "Ancient Aliens",
-            author: {
-                firstName: "Giorgio",
-                lastName:"Tsoukalos"
-            }}
-
-
-    ];
-    console.log(books);
-    for (var i=0; i<books.length; i++){
-        console.log("book # " + (i+1));
-        console.log("title: " + books[i].title);
-        console.log("author: " + books[i].author.firstName + " " + books[i].author.lastName);
-        console.log("---");
-    }
-    console.log("...");
-
-    books.forEach(function (book, i)){
-        console.log("book # " + (i+1));
-        console.log("title: " + books[i].title);
-        console.log("author: " + books[i].author.firstName + " " + books[i].author.lastName);
-        console.log("---");
+    // books.forEach(function (book, i)){
+    //     console.log("book # " + (i+1));
+    //     console.log("title: " + books[i].title);
+    //     console.log("author: " + books[i].author.firstName + " " + books[i].author.lastName);
+    //     console.log("---");
 
 
 
@@ -182,4 +185,4 @@
      *   `showBookInfo` function.
      */
 
-}})();
+})();
