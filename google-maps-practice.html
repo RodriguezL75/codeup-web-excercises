@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Googe Maps</title>
+    <style type="text/css">
+        #map-canvas {
+            width: 770px;
+            height: 481px;
+        }
+    </style>
+</head>
+<body>
+<div id="map-canvas"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&callback=initMap"
+        async defer></script>
+<script>
+
+    function initMap() {
+        var mapCanvas = document.getElementById("map-canvas");
+        var mapOptions = {
+            zoom: 10,
+            center: {
+                lat: 29.426791,
+                lng: -98.48602
+            }
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+
+
+</script>
+
+
+</body>
+</html>
