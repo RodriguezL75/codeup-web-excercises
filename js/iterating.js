@@ -21,6 +21,8 @@ console.log(names[1]);
 console.log(names[2]);
 console.log(names[3]);
 
+//the loop below lists the names individually per line
+
 for (var i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
@@ -39,6 +41,7 @@ names.forEach(function (element, index, array) {
 
 console.log("ForEach Loop");
 
+//Lists name at each index
 names.forEach(function (element, index, array) {
     console.log("Name at index: " + index + " is " + element);
 })

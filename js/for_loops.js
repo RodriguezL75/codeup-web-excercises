@@ -10,8 +10,6 @@ for(var i = 1; i <= 10; i+=1 ){
 
 
 
-
-
 for (var i = 0; i < 10; i++) {
     var random = Math.floor((Math.random()*200)+20);
     console.log('Loop counter is: ' + i);

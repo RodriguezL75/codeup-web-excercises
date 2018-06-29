@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Practice Googe Maps</title>
+
     <style type="text/css">
         #map-canvas {
             width: 770px;
@@ -12,6 +13,10 @@
 </head>
 <body>
 <div id="map-canvas"></div>
+<h1>Rita's</h1>
+<h3>Great Margaritas!</h3>
+<h3>Live Music!</h3>
+<h3>Open Late</h3>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&callback=initMap"
         async defer></script>
@@ -20,13 +25,48 @@
     function initMap() {
         var mapCanvas = document.getElementById("map-canvas");
         var mapOptions = {
-            zoom: 10,
+            zoom: 13,
             center: {
                 lat: 29.426791,
                 lng: -98.48602
             }
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        //geocoding
+        var geo = new google.maps.Geocoder();
+
+        geo.geocode({address: "1 UTSA Circle"}, function(response, status) {
+            if (status === "OK") {
+                console.log(response[0].geometry.location.lat());
+                console.log(response[0].geometry.location.lng());//getting lat & long
+                // map.setCenter(response[0].geometry.location);
+
+
+            } else {
+                alert("invalid address!");
+            }
+        });
+        //adding markers
+        var marker = new google.maps.Marker({
+            position: {
+                lat: 29.426791,
+                lng: -98.48602
+            },
+            map: map
+        });
+        //info window, have images, h1 text
+        var infoWindow = new google.maps.InfoWindow({
+            content: "This is Codeup"
+        });
+        infoWindow.open(map, marker);
+
+        //event listeners
+        map.addListener("dragend", function(){
+            // console.log("Fire");
+            infoWindow.open(map, marker);
+        })
+
     }
 
 

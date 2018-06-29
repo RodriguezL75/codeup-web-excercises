@@ -68,5 +68,10 @@ document.getElementById("playbutton").addEventListener("click", function (){
 }
 
 
-
+$(function (){
+    $("#playButton").click(function(){
+        $("#playOutput").text($("#playInput").val());
+        $("h1").toggle(1000);
+    })
+})
 

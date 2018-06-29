@@ -12,9 +12,6 @@ console.log(userNum);
 
 
 
-
-
-
 console.log("Number to skip is: " + userNum);
 
 for (var i = 1; i <= 50; i += 1) {
