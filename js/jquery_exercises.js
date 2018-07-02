@@ -170,8 +170,16 @@ function (arr) average{
 }
 
 
+//getter
+var h1Html = $('h1').html();
 
 
+//setter opt 1
+$('.box').css('height', '70px');
+$('.box').css('widtht', '100px');
+
+opt2
+$
 
 
 
