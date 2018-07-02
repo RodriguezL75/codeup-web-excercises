@@ -127,10 +127,92 @@ $(function () {
 //    Two Functions
 
 
-
-
-
-
 });
+
+function average (arr) {
+    var sum = 0;
+    for (i = 0; i < arr.length ; i ++;)
+     +=
+
+
+    //while loop
+    function average(nums) {
+        var sum = 0;
+        var i = 0;
+        while (i < nums.length) {
+            sum += nums[i];
+            i++;
+        }
+        return sum / nums.length;
+
+
+
+
+    }
+    var = 0;
+    while (i<arr.length) {
+    sum+=arr[i];
+    i++;
+    }
+    return sum / arr.length;
+}
+
+
+
+
+
+
+
+
+function (arr) average{
+    for var i = 0; i < arr.length; i ++;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
