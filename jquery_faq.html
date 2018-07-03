@@ -3,42 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>JQuery FAQ</title>
+    <link rel="stylesheet" href="css/jquery_faq.css">
+
 </head>
 <body>
 <h1>National Parks FAQs</h1>
-
-<style>
-.invisible {
-    display: none;
-}
-
-/*.highlighted {*/
-    /*background-color: yellowgreen;*/
-/*}*/
-    /**/
-/*.cursive {*/
-    /*font-style: italic;*/
-/*}    */
-
-</style>
-
-<script src="js/jquery-2.2.4.js"></script>
-<script>
-"use strict";
-$(document).ready(function () {
-    $("button").click(function () {
-        $("dd").toggle();
-        }
-    )
-});
-
-$("dd").click(function () {
-    $(this).next().toggleClass("cursive");
-
-})
-
-</script>
-
 <dl>
     <dt>How do I obtain a park entrance pass?</dt>
     <dd class="invisible">Only 118 of your 417 park sites charge entrance fees. You can obtain park entrance passes by visiting a park site that charges an entrance fee. Entrance fee sites have passes available; we recommend calling a park prior to your visit. (See the park search to locate a specific park.) There are a number of entrance passes available, including park-specific passes as well as passes that offer entrance to more than 2,000 federal recreation sites in addition to the national parks (Annual, Military, Senior, 4th Grade, Access, and Volunteer passes). Learn more about the America the Beautiful - The National Parks and Federal Recreational Lands Pass.</dd>
@@ -71,8 +40,50 @@ $("dd").click(function () {
     <dd class="invisible">To find out how to register, search for opportunities, and apply for financial assistance visit Grants.gov.</dd>
 </dl>
 
-<button>Toggle between hide() and show()</button>
+<!--<button>Toggle between hide() and show()</button>-->
+<div>
+<button id ="toggleHideS">Toggle Hide Show</button>
+</div>
 
+
+<h3 id="national-parks-heading">National Parks</h3>
+<ul id="national-parks">
+    <h3>Arches</h3>
+    <ul>
+        <li>Arch One</li>
+        <li>Arch Two</li>
+        <li>Arch Three</li>
+        <li>Arch Four</li>
+    </ul>
+    <h3>Badlands</h3>
+    <ul>
+        <li>BL 1</li>
+        <li>Bl 2</li>
+        <li>Bl 3</li>
+        <li>Bl 4</li>
+    </ul>
+    <h3>Carlsbad Caverns</h3>
+    <ul>
+        <li>New Mexico</li>
+        <li>Lots of Bats</li>
+        <li>X miles down</li>
+        <li>Elevator Available</li>
+    </ul>
+
+
+
+
+
+<button id="listButtonHighlight">last li is yellow</button>
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<script src="js/jquery_faq.js"></script>
 
 
 
