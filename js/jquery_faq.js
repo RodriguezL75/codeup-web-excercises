@@ -18,6 +18,24 @@ $(document).ready(function () {
         }
     )
 
+    $("span").click(function(){
+        $("#newsletter").hide();
+
+    });
+
+    $("h3").click(function () {
+        $("ul").slideToggle();
+
+    })
+
+    $("h2").click(function(){
+        $("#register").delay("fast").fadeOut();
+    })
+
+
+    setTimeout(function () {
+          $("#register").fadeIn();
+    }, 8000);
 
     $("#listButtonHighlight").on("click", function () {
         $("ul").each(function () {
@@ -36,6 +54,8 @@ $(document).ready(function () {
         $(this).next().css("fontWeight", "bold");
 
     });
+
+
 
 
 });

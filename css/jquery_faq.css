@@ -6,3 +6,11 @@
 .highlight {
     background-color: yellow;
 }
+
+ul {
+    display: none;
+}
+
+h2 {
+     display: none;
+ }
