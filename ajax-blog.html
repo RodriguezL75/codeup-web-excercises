@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<tr>
+  <h1>My Blog</h1>
+        <div id="posts">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+    (function(){
+
+        "use strict"
+        var postsDiv = $('#posts');
+
+        function getPosts() {
+            $.get("./data/blog.json", function(posts){
+                posts.forEach(function(post){
+                    addPost(post);
+                });
+                postsDiv.fadeIn();
+            });
+        }
+
+        function addPost(item){
+            var html = "<div>";
+            html += "<h1>" + item.title + "</h1>";
+            html += "<p>" + item.content + "</p>";
+            html += "<h3>" + item.categories.join(" | ") + "</h3>";
+            html += "<i>" + item.date + "</i>";
+            html += "</div>";
+            postsDiv.append(html);
+        }
+
+        getPosts();
+
+    })();
+
+</script>
+
+
+            <!--<th>Title</th>-->
+            <!--<th>Content</th>-->
+            <!--<th>Categories</th>-->
+            <!--<th>Date</th>-->
+<!--</tr>-->
+<!--</td>-->
+
+
+<!--</div>-->
+
+
+
+<!--<script>-->
+    <!--(function() {-->
+        <!--"use strict";-->
+
+
+        <!--$.ajax({-->
+            <!--url: "./data/blog.json",-->
+            <!--type: "GET",-->
+
+        <!--}).done(function(data) {-->
+            <!--// do something with the data-->
+            <!--var table;//to hold each object;-->
+            <!--data.forEach(function(object) {-->
+                <!--table += "th scope = 'row'><tr><td>" + object.title + '</td><td>'+ object.content + '</td><td>' + object.categories + '</td><td>'-->
+                    <!--+ object.date + '</td></tr></th>';//create array object by heading title in inventory.json-->
+                <!--console.log(object);-->
+                <!--$('#insertPosts').html(table);// prints to browser in table body-->
+
+            <!--})-->
+        <!--});-->
+
+
+        <!--$('#refresh-btn').click(function(){-->
+            <!--location.reload();-->
+        <!--})-->
+
+
+        <!--})();-->
+
+</script>
+
+
+
+// <!--<script>-->
+//     <!--(function() {-->
+//         <!--"use strict";-->
+// <!--// This is an ajax GET request for /data/blog.json-->
+//         <!--$.ajax('./data/blog.json').done(function (data) {-->
+// <!--// which returns an array of objects that I named "data"-->
+//             <!--appendData(data)-->
+// <!--// this console logs the "error" status if something goes wrong-->
+//         <!--}).fail(function (JSONObject, status) {-->
+//             <!--console.log(status);-->
+//         <!--});-->
+//
+//
+// <!--// This function takes the data from inventory.json and appends it to the products table-->
+//         <!--function appendData(data) {-->
+//             <!--var inventory = " "-->
+// <!--// For each item in this data array, I created a line of html called "inventory" and then append that html into the "products" table-->
+//             <!--data.forEach(function(posts){-->
+//                 <!--inventory += "<tr>"-->
+//                 <!--inventory += "<td>" + posts.title + "</td>"-->
+//                 <!--inventory += "<td>" + posts.content + "</td>"-->
+//                 <!--inventory += "<td>" + posts.categories + "</td>"-->
+//                 <!--inventory += "<td>" + posts.date + "</td>"-->
+//                 <!--inventory += "</tr>"-->
+//             <!--})-->
+// <!--console.log(data);-->
+// <!--//This appends the inventory html that was created to the #insertProducts table body-->
+//             <!--$("#insertProducts").append(inventory)-->
+//         <!--}-->
+
+
+    <!--})();-->
+
+    <!--function newData(){-->
+        <!--var inventory = " "-->
+        <!--var ajaxRequest = $.ajax("./data/blog.json")-->
+
+<!--//This resets the table back to the default of empty by calling its id and using the jQuery selector of .html set to an empty string. This solves the problem of the refresh button continuing to append every time it was clicked.-->
+        <!--$('#insertProducts').html("")-->
+
+        <!--ajaxRequest.done(function (data){-->
+            <!--data.forEach(function(item){-->
+            //     <!--inventory += "<tr>"-->
+            //     <!--inventory += "<td>" + item.title + "</td>"-->
+            //     <!--inventory += "<td>" + item.quantity + "</td>"-->
+            //     <!--inventory += "<td>" + item.categories + "</td>"-->
+            //     <!--inventory += "<td>" + item.price + "</td>"-->
+            //     <!--inventory += "</tr>"-->
+            // <!--})-->
+            // <!--$("#insertProducts").append(inventory)-->
+
+        <!--})-->
+    <!--}-->
+    <!--$("#refresh-btn").click(newData)-->
+
+<!--</script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
