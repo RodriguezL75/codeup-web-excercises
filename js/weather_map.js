@@ -35,6 +35,10 @@ $(document).ready(function() {
         }
 
     currentWeather(data);
+
+        $('li').css('line-style-type', 'none');
+
+
         // console.log(data.list[8].main.humidity);
         // console.log(data.list[8].main.temp_max);
         // console.log(data.list[8].wind.speed);
