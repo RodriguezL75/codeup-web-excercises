@@ -19,12 +19,12 @@ wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
 
 
 // const getLastEvent = (username) => {
-//     const token ='6b19cda6d236765d1ac56c137ebdffbb0bad5740';
+//     const token ='';
 //     const url =`https://api.github.com/users/${username}/events/public`
 //     return fetch(url, {headers: {'Authorization': `token ${token}`}});
 // }
 //
-// getLastEvent('RodriguezL75').then((data) => {
+// getLastEvent('NNNNNNNN').then((data) => {
 //     lastEvent.forEach((username) => {
 //     console.log(data);
 // })
@@ -59,7 +59,7 @@ const getLastEvent = ((userName)=> {
 
 
 
-//     const username = `ruusabolton`;//define the username you are targetting
+//     const username = `NNNNNNNNNN`;//define the username you are targetting
 //     const url = `https://api.github.com/users/${username}/events/public`;//URL of API
 //     const token = "1";//your GitHub token
 //
